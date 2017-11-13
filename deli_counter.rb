@@ -1,1 +1,31 @@
-# Write your code here.
+katz_deli = []
+
+def line(katz_deli)
+  if katz_deli.empty?
+    puts "The line is currently empty."
+
+  else
+    constant = "The line is currently:"
+    katz_deli.each_with_index do |value, index|
+    constant << " #{index+1}. #{value}"
+  end
+  puts constant
+  end
+end
+
+
+
+
+def take_a_number(katz_deil,name)
+  puts "Welcome, #{name}. You are number #{katz_deil[name]+1} in line."
+end
+
+def now_serving
+  if katz_deli.size == 0
+    puts "There is nobody waiting to be served!"
+
+  else
+    puts "Currently serving #{katz_deli.first}"
+    katz_deli.shift
+  end
+end
