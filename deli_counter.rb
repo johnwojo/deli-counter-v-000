@@ -13,9 +13,6 @@ end
 
 
 def take_a_number(katz_deil,name)
-  if katz_deli.empty?
-    katz_deli << name
-  elsif
   katz_deli << name
   puts "Welcome, #{name}. You are number #{katz_deli.index+1} in line."
 end
